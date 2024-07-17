@@ -315,14 +315,13 @@
 }
 
 .about__title {
-  width: 291px;
-  height: 47px;
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 101px;
+  white-space: nowrap;
 }
 
 .about__text {
@@ -339,7 +338,61 @@
 }
 
 .footer {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 91px;
+  display: grid;
+  margin: 0 50px 91px;
+  min-width: 1000px;
+  min-height: 97px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "address footer__menu footer__social-list";
+}
+
+.footer .address {
+  padding: 0 185px 91px 0;
+  line-height: 24px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.footer .header__address {
+  line-height: 24.3px;
+}
+
+.footer__menu {
+  margin: 0 0 33px 3px;
+  /*position: relative;
+  left: 3px;*/
+  text-align: center;
+  width: 149px;
+  height: 64px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+.footer__menu-link {
+  text-underline-position: under;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  margin: 0 0 48px 186px;
+  display: flex;
+  width: 240px;
+  height: 48px;
+  list-style: none;
+  gap: 48px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }
