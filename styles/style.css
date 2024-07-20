@@ -1,15 +1,15 @@
 .header {
+  margin: 92px 24px 94.5px 24px;
   display: grid;
   font-size: 18px;
   min-width: 1052px;
   grid-template-columns: 1fr min-content 1fr;
   grid-template-areas: "header__links-list header__logo-image address";
-  margin: 92px 24px 94.5px 24px;
 }
 
 .header__menu {
-  min-width: 454px;
   padding: 44px 40.48px 39px 26.52px;
+  min-width: 454px;
 }
 
 .header__links-list {
@@ -41,15 +41,15 @@
 }
 
 .header__logo-image {
-  width: 100%;
   padding: 1px 8px 0 5px;
+  width: 100%;
 }
 
 .address {
+  padding: 5px 25.48px 2px 184.52px;
   display: grid;
   line-height: 24.9px;
   white-space: nowrap;
-  padding: 5px 25.48px 2px 184.52px;
   font-style: normal;
   text-underline-position: under;
 }
@@ -59,6 +59,7 @@
 }
 
 .cover {
+  margin: 0 0 179px;
   position: relative;
   min-height: 757px;
   background-image: url(../images/cover.jpg);
@@ -157,7 +158,7 @@
 }
 
 .lots {
-  margin: 179px 24px 146px;
+  margin: 0 24px 146px;
   min-width: 1052px;
 }
 
@@ -317,14 +318,12 @@
 .footer {
   display: grid;
   margin: 0 50px 91px;
-  /*min-width: 1000px;*/
-  max-width: 1000px;
+  min-width: 1000px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "address footer__menu footer__social-list";
 }
 
 .footer .address {
-  /*padding: 0 185px 91px 0;*/
   padding: 0;
   line-height: 24px;
   white-space: nowrap;
