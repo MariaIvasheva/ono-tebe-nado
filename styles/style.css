@@ -177,12 +177,15 @@
   list-style: none;
   gap: 25px;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .lots__card-list-item {
-  width: 100%;
+  /*width: 100%;*/
   min-height: 100%;
   position: relative;
+  /*flex-wrap: wrap;*/
+  flex-grow: 1;
 }
 
 .card-link {
